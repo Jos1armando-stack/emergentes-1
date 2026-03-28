@@ -1,0 +1,11 @@
+package emergentes.tareaN1.emergentes;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class holacontroller {
+       @GetMapping("/")
+    public String inicio() {
+        return "Aplicación funcionando";
+    }
+}

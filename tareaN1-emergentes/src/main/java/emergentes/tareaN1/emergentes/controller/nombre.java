@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class nombre {
     
     @GetMapping("/nombre")
-    public String mostrarNombreCompleto() {
-        return "Armando Morales Ayaviri";
+    public String hola() {
+        return "Mi nombre es Armando Morales Ayaviri y de aqui en 5 años veo profesional y por lo menos seguir estudiando para ser mejor y poder sacar una especialidad y una maestria";
     }
 }
