@@ -1,0 +1,2 @@
+spring.application.name=paraPrueba
+server.port=8082
