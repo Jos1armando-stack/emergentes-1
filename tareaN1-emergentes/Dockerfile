@@ -1,5 +1,7 @@
 FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
-COPY target/tareaN1-emergentes-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8081
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY . .
+RUN chmod +x mvnw
+RUN ./mvnw clean package -DskipTests
+EXPOSE 8081x
+ENTRYPOINT ["java","-jar","target/tareaN1-emergentes-0.0.1-SNAPSHOT.jar"]
