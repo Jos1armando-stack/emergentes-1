@@ -24,4 +24,8 @@ public class Hello {
         lista.add(variable);
         return variable;
     }
+    @GetMapping ("/")
+    public String comienzo (){
+        return "Funciona la aplicacion" ;
+    }
 }
